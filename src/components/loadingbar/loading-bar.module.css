@@ -1,0 +1,14 @@
+.shim-gray {
+transform: translateX(-100%);
+/* background-image: linear-gradient(90deg, rgba(108, 108, 108, 1) 100%); */
+    animation: shimmer 2.5s ease-out infinite;
+}
+
+@keyframes shimmer {
+0% {
+        transform: translateX(-200%);
+    }
+  100% {
+    transform: translateX(400%);
+    }
+}

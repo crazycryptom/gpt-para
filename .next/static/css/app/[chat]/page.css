@@ -1,0 +1,18 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/loadingbar/loading-bar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+.loading-bar_shim-gray__Pg8B3 {
+transform: translateX(-100%);
+/* background-image: linear-gradient(90deg, rgba(108, 108, 108, 1) 100%); */
+    animation: loading-bar_shimmer__WQPh5 2.5s ease-out infinite;
+}
+
+@keyframes loading-bar_shimmer__WQPh5 {
+0% {
+        transform: translateX(-200%);
+    }
+  100% {
+    transform: translateX(400%);
+    }
+}
+

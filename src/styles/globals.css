@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+  display: grid;
+  place-items: center;
+}
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-berkeley-mono {
+  font-family: var(--font-berkeley-mono);
+}
+
+body {
+  font-family: "Inter", serif !important;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}

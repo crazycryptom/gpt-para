@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\layout.tsx -> nextjs-toploader\":{\"id\":\"app\\\\layout.tsx -> nextjs-toploader\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_nextjs-toploader_dist_index_js.js\"]}}"
