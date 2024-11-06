@@ -89,7 +89,7 @@ export const ChatsHistory = () => {
   const list = useChatHistory((s) => s.list);
   const append = useChatHistory((s) => s.append);
   return (
-    <div className="relative border-r bg-[#103a44] ">
+    <div className="relative bg-[#103a44] dark:bg-[#333538]">
       <div className="sticky top-0 z-[2] flex flex-col space-y-2 p-2 pb-3">
         <div className="md:h-header-height flex  h-[60px] items-center justify-between">
           <span className="flex" data-state="closed">

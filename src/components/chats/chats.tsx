@@ -20,7 +20,7 @@ const Textarea = ({ onChange, input }: any) => {
   return (
     <>
       {/* component */}
-      <div className="mx-auto flex flex-1  items-center rounded-full bg-white px-3 py-2 shadow-md focus:outline-none">
+      <div className="mx-auto flex flex-1  items-center rounded-full bg-white dark:bg-[#2B2D31] px-3 py-2 shadow-md focus:outline-none">
         <span className="flex" data-state="closed">
           <span>
             <button
@@ -48,7 +48,7 @@ const Textarea = ({ onChange, input }: any) => {
         <input
           type="text"
           placeholder="Type your message..."
-          className="max flex-1 rounded-full bg-white px-3 py-1 focus:outline-none"
+          className="max flex-1 rounded-full bg-white dark:bg-[#1B1D21] px-3 py-1 focus:outline-none"
           value={input ?? ""}
           onChange={onChange}
         />
@@ -59,7 +59,7 @@ const Textarea = ({ onChange, input }: any) => {
           type="submit"
           aria-label="Send prompt"
           data-testid="send-button"
-          className="disabled:dark:bg-token-text-quaternary dark:disabled:text-token-main-surface-secondary flex h-8 w-8 items-center justify-center rounded-full bg-black text-white transition-colors hover:opacity-70 focus-visible:outline-none focus-visible:outline-black disabled:bg-[#D7D7D7] disabled:text-[#f4f4f4] disabled:hover:opacity-100 dark:bg-white dark:text-black dark:focus-visible:outline-white"
+          className="disabled:dark:bg-token-text-quaternary dark:disabled:text-token-main-surface-secondary flex h-8 w-8 items-center justify-center rounded-full bg-black text-white transition-colors hover:opacity-70 focus-visible:outline-none focus-visible:outline-black disabled:bg-[#D7D7D7] disabled:text-[#f4f4f4] disabled:hover:opacity-100 dark:bg-[#1B1D21] dark:text-[#E8E9EB] dark:focus-visible:outline-white"
         >
           <svg
             width={32}
@@ -122,7 +122,7 @@ const Message = React.forwardRef<HTMLDivElement, {
             role !== 'system' && (
               <div
                 className={clsx(
-                  "font-inter col-start-2 col-end-9 w-full  bg-white px-4 py-2",
+                  "font-inter col-start-2 col-end-9 w-full  bg-white dark:bg-gray-800 px-4 py-2",
                   role === "user"
                     ? "w-3/5 rounded-3xl rounded-br  border-green-600"
                     : "rounded-3xl  rounded-bl-md",
@@ -224,7 +224,7 @@ export const ChatThread = () => {
 
   return (
     <div className="flex h-full w-full flex-col gap-1 p-4">
-      <div className="sticky right-0 top-0 w-full border-b bg-white px-4 pb-2 pt-3">
+      <div className="sticky right-0 top-0 w-full rounded-[50px] bg-white dark:bg-[#2A2C31] px-4 pb-2 pt-3">
         <div className="relative mb-2 w-full flex-row-between">
           <span className="font-inter text-xs font-bold uppercase ">
             conversation
@@ -321,7 +321,7 @@ export const ChatThread = () => {
 
             )}
           </div>
-          <div className="sticky bottom-0 w-full max-w-5xl bg-[#F5F5F5] md:py-10 xs:py-4">
+          <div className="sticky bottom-0 w-full max-w-5xl bg-[#F5F5F5] dark:bg-[#3B3D41] md:py-10 xs:py-4">
             <form onSubmit={handleSubmit} className="w-full">
               <Textarea onChange={handleInputChange} input={input} />
             </form>
@@ -357,7 +357,7 @@ export const Chats = () => {
       </div>
 
       {/* Main Chat Thread */}
-      <div className="w-full flex-1 overflow-hidden">
+      <div className="w-full flex-1 overflow-hidden dark:bg-[#3B3D41]">
         <ChatThread />
       </div>
 
